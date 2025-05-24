@@ -6,33 +6,12 @@
     <title>LeHotel</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .room-type-button {
-            background-color: #f0f0f0;
-            color: #333;
-            border: 1px solid #ccc;
-            padding: 10px 15px;
-            margin-right: 10px;
+        /* ... (Your existing inline styles) ... */
+        .room-description img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .room-type-button:hover {
-            background-color: #e0e0e0;
-        }
-
-        .room-description {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
-            display: none; /* Initially hidden */
-        }
-
-        .room-description h4 {
-            color: #337ab7;
-            margin-top: 0;
         }
     </style>
 </head>
@@ -65,21 +44,25 @@
 
             <div id="basic" class="room-description">
                 <h4>Basic 🔹</h4>
+                <img src="images/basic/basic_room.jpg" alt="Image of a Basic Room at LeHotel">
                 <p><strong>Features:</strong> 2 Bedroom, 1 bathroom, Free high-speed Wi-Fi, 40” Smart TV in living room, Mini fridge and coffee/tea station, Desk/workstation, Daily housekeeping.</p>
             </div>
 
             <div id="suite" class="room-description">
                 <h4>Suite 🔸</h4>
+                <img src="images/suite/suite_room.jpg" alt="Image of a Suite at LeHotel">
                 <p><strong>Features:</strong> 3 bedroom, 2 bathroom, living room balcony, Dining table for 4, Full kitchenette (microwave, induction cooker, utensils), 50” Smart TV, Premium bath amenities, Welcome fruit basket or drink, Dedicated luggage storage space.</p>
             </div>
 
             <div id="luxury" class="room-description">
                 <h4>Luxury ⭐</h4>
+                <img src="images/luxury/luxury_room.jpg" alt="Image of a Luxury Room at LeHotel">
                 <p><strong>Features:</strong> 3 bedroom, 2 bathroom, living room balcony AND Master bedroom Balcony, Nespresso machine, Mood lighting or smart lighting system, Rain shower or soaking tub in master bathroom, Larger balcony with seating area or daybed, Soundproof walls, Personal concierge service.</p>
             </div>
 
             <div id="master" class="room-description">
                 <h4>Master Suite 👑</h4>
+                <img src="images/master/master_suite.jpg" alt="Image of the Master Suite at LeHotel">
                 <p><strong>Features:</strong> 2 floors, 4 bedroom, 3 bathroom, living room balcony AND Master bedroom Balcony, Open view Jacuzzi, Private in-room sauna, Fireplace or designer feature wall, Floor-to-ceiling windows with panoramic views, Butler service, Walk-in wardrobe, Smart home controls (lights, AC, curtains), Complimentary mini-bar or wine selection, In-room massage chair or spa services on request.</p>
             </div>
         </section>
