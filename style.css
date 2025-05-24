@@ -1,22 +1,29 @@
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0; /* Remove default body margin */
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Light, airy background (Alice Blue) */
 }
 
 header {
-    background-color: #333;
+    background-color: #007bff; /* Vibrant blue header */
     color: white;
-    padding: 1em 0;
+    padding: 1.5em 20px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0 0;
 }
 
 nav ul li {
@@ -27,39 +34,107 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 main {
-    margin-top: 20px;
+    padding: 2em 20px;
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the main content */
+    max-width: 960px; /* Limit width for better readability */
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White section background */
+    border: 1px solid #ddd; /* Subtle border */
 }
 
-h1, h2, h3 {
-    color: #333;
+section h2 {
+    color: #007bff; /* Vibrant blue section heading */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 .faq-item {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc; /* Dashed line for FAQ items */
 }
 
 .faq-item:last-child {
     border-bottom: none;
 }
 
+.faq-item h3 {
+    color: #28a745; /* Green for FAQ questions */
+    margin-top: 0;
+}
+
 footer {
     text-align: center;
+    padding: 1.5em 20px;
+    background-color: #343a40; /* Dark gray footer */
+    color: #f8f9fa; /* Light text for footer */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
+}
+
+/* Specific styling for the FAQ page */
+body#faq-page main section {
+    background-color: #e9ecef; /* Light gray for FAQ section */
+    border-color: #ced4da;
+}
+
+body#faq-page main section h2 {
+    color: #17a2b8; /* Teal for FAQ heading */
+    border-bottom-color: #17a2b8;
+}
+
+/* Specific styling for the Contact Us page */
+body#contact-page main section {
+    background-color: #ffeeba; /* Light yellow for Contact section */
+    border-color: #ffc107;
+}
+
+body#contact-page main section h2 {
+    color: #ffc107; /* Yellow for Contact heading */
+    border-bottom-color: #ffc107;
+}
+
+body#contact-page main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+body#contact-page main section li {
+    margin-bottom: 10px;
 }
